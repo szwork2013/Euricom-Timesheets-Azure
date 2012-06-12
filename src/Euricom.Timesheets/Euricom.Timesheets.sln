@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euricom.Timesheets.Web", "Euricom.Timesheets.Web\Euricom.Timesheets.Web.csproj", "{B8CFEAB5-13E0-4A85-AD4D-06C39D65F550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euricom.Timesheets.Web.Tests", "Euricom.Timesheets.Web.Tests\Euricom.Timesheets.Web.Tests.csproj", "{B1377860-27BA-4713-BC22-C1F7B29DFAC2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Euricom.Timesheets.Database", "Euricom.Timesheets.Database\Euricom.Timesheets.Database.sqlproj", "{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1377860-27BA-4713-BC22-C1F7B29DFAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1377860-27BA-4713-BC22-C1F7B29DFAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1377860-27BA-4713-BC22-C1F7B29DFAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1377860-27BA-4713-BC22-C1F7B29DFAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CFEAB5-13E0-4A85-AD4D-06C39D65F550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CFEAB5-13E0-4A85-AD4D-06C39D65F550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CFEAB5-13E0-4A85-AD4D-06C39D65F550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CFEAB5-13E0-4A85-AD4D-06C39D65F550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B50F1D-E8C4-45B6-B69F-4F532208CC34}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

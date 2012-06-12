@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/bootstrap/css")
+    
+    @Scripts.Render("~/bundles/jquery","~/bundles/bootstrap","~/bundles/knockout")
+
+    @RenderSection("scripts", required: false)
+    
+    <script type="text/javascript">
+        $(function () {
+            var requestUrl = '@Url.RouteUrl("DefaultApi", new { httproute = "", controller = "Application" })';
+            requestUrl += '/1';
+            $.get(requestUrl, function (data) {
+                $(".applicationName").text(data.Name);
+            });
+        });
+    </script>
+
+    @RenderSection("Head", required : false)
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand applicationName" href="#">Loading..</a>
+            <div class="nav-collapse">
+                <ul class="nav">                      
+                    <li class="">
+                        @Html.ActionLink("Home", "Index", "Home")
+                    </li>                                                      
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container">
+        <header class="jumbotron subhead">
+            <h1 class="applicationName">Loading..</h1>            
+        </header>
+
+        @RenderBody()
+
+        <footer class="footer">
+            <p>We can put a footer here</p>
+        </footer>
+    </div>
+
+</body>
+</html>
